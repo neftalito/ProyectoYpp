@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- TODO: Añadir descripcion -->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Descripcion" />
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Preload se usa para cargar todo antes de la pagina (Ayuda a que todo cargue mas rapido) -->
+        <link rel="preload" href="../css/normalize.css" as="style" />
+
+        <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+
+        <link rel="stylesheet" href="../css/styles.css" />
+
+        <title>Tips para programadores</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="MenuBtn">
+                    <a href="#" onclick="ToggleMenu()">
+                        <i class="bi bi-list"></i>
+                        <span id="BotonTexto">
+                            Abrir
+                        </span>
+                    </a>
+                </div>
+                <i class="bi bi-emoji-smile"></i>
+                <a href="#">Nosotros</a>
+                <a href="../index.html">Menu</a>
+                <a href="#">Inicio</a>
+                <a href="#">Tips</a>
+            </nav>
+        </header>
+        <main>
+            <div class="Pagina">
+                <div class="MenuScroll">
+                    <div class="Menu">
+                        <div id="MenuContenido">
+                            <a href="/tips/Tips.html" target="_top">Tips</a>
+                            <a href="/tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a>
+                            <a href="/tips/como-trabajar-en-equipo.html" target="_top">Cómo trabajar en equipo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Informacion Box-Shadow">
+                    <h1 class="texto-centrado arreglar-margin">¿Cómo trabajar en equipo?</h1>
+
+                    <h2>Requisitos</h2>
+
+                    <ul>
+                        <li>Visual Studio Code (<a href="https://code.visualstudio.com/">Descargar</a>)</li>
+                        <li>Extensiones: <a href="https://visualstudio.microsoft.com/es/services/live-share/">Live Share</a> y <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></li>
+                        <li><a href="https://ngrok.com/">Ngrok</a></li>
+                    </ul>
+
+                    <h2>¿Para qué usaremos cada cosa?</h2>
+
+                    <p>
+                        Visual Studio Code: Como editor de codigo. <br />
+                        Live Share: Para editar el codigo en <b>tiempo real</b> con sus compañeros de trabajo. <br />
+                        Live Server: Para crear un servidor y ver la pagina en <b>tiempo real</b>. <br />
+                        Ngrok: Utilizado para crear una pagina abierta al publico.
+                    </p>
+
+                    <h2>¿Como configurar todo?</h2>
+                    <ul>
+                        <li>
+                            <h3>Visual Studio Code</h3>
+                            <a href="#Video" class="btn btn-primary" data-toggle="collapse">Abrir/Cerrar</a>
+                                <div class="texto-centrado">
+                                    <iframe
+                                        class="Borde"
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/Esnj9pntvyU"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                        </li>
+
+                        <li>
+                            <h3>Live Share</h3>
+
+                            <div>
+                                <ol>
+                                    <li>
+                                        <p>Primero lo instalamos como una extensión, en la pestaña de extensiones buscamos Live share y lo instalamos.</p>
+                                    </li>
+
+                                    
+                                    <li>
+                                        <p>Luego de instalarlo, deberemos iniciar sesion (ya sea con Microsoft o con Github).</p>
+
+                                        <br />
+                                        <p>Una vez ya registrados, <b>podemos crear una sesion de trabajo o bien unirnos a una.</b></p>
+
+                                        <br />
+                                        <p>
+                                            Para crear la sesion nosotros, hacemos click en nuestro nombre de usuario y elegimos <b>Start Collaboration Session</b> se creara un enlace de invitacion que debemos compartir con nuestros
+                                            compañeros. Para nosotros unirnos a una sesion, elegimos la opcion <b>Join Collaboration Session</b> nos van a pedir el enlace de invitacion de el anfitrion, lo ingresamos.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Live Server</h3>
+
+                            <div>
+                                <p>En la pestaña de extensiones, buscamos Live Server y lo instalamos</p>
+
+                                <br />
+                                <p>
+                                    Hacemos clic en el engranaje y seleccionamos <b>Extension Settings</b> Dentro de el apartado <b>User</b> vamos a la opcion de <b>AutoSave</b> y cambiamos el ajuste de off por OnFocusChange, esto para que
+                                    cada vez que hagamos click fuera del archivo se guarde automaticamente.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h3>Ngrok</h3>
+
+                            <div>
+                                <ol>
+                                    <li>
+                                        <p>Creamos una cuenta e iniciamos sesion.</p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/CrearCuenta.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Una vez creada la cuenta, nos enviara al "dashboard" de ngrok. Y ahi nos daran un token para poder utilizar el programa</p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Token.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Luego de obtener el token, descargamos el programa y recuerden elegir el sistema operativo que utilizan</p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Descarga.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Se les descargará un archivo .zip, este lo descompriremos con un programa como <a href="https://www.7-zip.org/">7zip</a> haciendole click derecho y apretando donde dice extraer aqui</p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivo.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>Hacemos click sobre donde dice la ruta del programa, en un espacio vacío, y escribimo "cmd". Luego presionen Enter</p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivoCmd.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Se nos abrira una ventana negra, es la consola de windows. Si seguimos todos los pasos correctos, ahi ponemos nuestro token y escribimos "
+                                            <code>ngrok.exe authtoken ************************</code>", luego presionamos enter. <br />
+                                            Luego de eso, nos deberia decir "Authtoken saved to configuration file"
+                                        </p>
+                                    </li>
+                                </ol>
+
+                                <h2 class="texto-centrado">Ahora, ¿Cómo se usa?</h2>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Es muy facil, habiendo seguido todos los pasos anteriores, ya deberia estar configurado, y para usarlo, podemos hacer el paso donde dice de poner cmd arriba de la ventana. Una ves abierta la
+                                            consola, el programa funciona de la siguiente manera <br />
+                                            "ngrok.exe (protocolo) (puerto)". Entonces, en la consola ponemos "ngrok.exe http 5500".
+                                            <b>
+                                                ¿Por qué? Bien "ngrok.exe" esta referenciando al programa, "http" le dice al programa que queremos usar el protocolo http, que es de paginas web, y el "5500" le dice al programa que vamos a
+                                                usar el puerto 5500, que es el puerto que utiliza live server para ver la pagina en tiempo real
+                                            </b>
+                                            <br />
+                                            Una vez hayamos hecho todo eso, nos aparecera una ventana asi
+                                        </p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokAndando.png" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Lo unico que tenemos que hacer es copiar uno de los dos links de "forwarding" y pasarselo a nuestros amigos, en nuestro caso vamos a usar el link "https://04594e008eb9.ngrok.io" y ya podremos
+                                            compartirlo con nuestros amigos para editar la pagina
+                                        </p>
+                                        <div class="texto-centrado">
+                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/UrlFin.png" />
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

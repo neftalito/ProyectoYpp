@@ -1,0 +1,177 @@
+:root {
+    --fondo-codigo: #1c232c;
+    --codigo-texto: rgb(175, 175, 47);
+    --fondo-navegacion: #00afb9;
+    --fondo-boton-navegacion: #006d77;
+}
+
+
+/* Box model hack, despues les explico */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Background */
+.Pagina{
+    background-color: var(--fondo-navegacion);
+    background-size: cover;
+}
+/* Menu Scroll */
+
+#MenuContenido {
+    margin: 0 auto;
+    background-color: var(--fondo-navegacion)
+}
+
+#MenuContenido a {
+    display: flex;
+    text-decoration: none;
+    padding-top: 1rem;
+    color: black;
+    padding: 1rem;
+}
+
+#MenuContenido a:hover {
+    background-color: var(--fondo-boton-navegacion);
+}
+
+.MenuScroll {
+    margin: 1rem 0;
+    display: none;
+    border: 2px solid var(--fondo-boton-navegacion);
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    /* height: 100%; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 5rem;
+}
+
+#MenuBtn {
+    width: 200px;
+}
+
+
+/* Cómo mostrar la pagina */
+
+.Pagina {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.Descripcion {
+    margin-left: 1rem;
+}
+
+.Informacion{
+    margin: 0 1rem;
+}
+
+/* Codigos */
+
+.codigo {
+    background-color: var(--fondo-codigo);
+    width: 90%;
+    border: 2px black solid;
+    border-radius: 1rem;
+    color: white;
+}
+
+.tabulacion {
+    margin-left: 40px;
+}
+
+.etiqueta,
+.etiqueta-cerrada {
+    color: white
+}
+
+.etiqueta::after,
+.etiqueta-cerrada::after {
+    color: var(--codigo-texto);
+    content: ">";
+}
+
+.etiqueta::before {
+    color: var(--codigo-texto);
+    content: "<";
+}
+
+.etiqueta-cerrada::before {
+    color: var(--codigo-texto);
+    content: "</";
+}
+
+
+/*Utilidades*/
+
+.texto-centrado {
+    text-align: center;
+}
+
+.contenedor-centrado {
+    margin: 0 auto;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.arreglar-margin{
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.Box-Shadow{
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+.Borde{
+    border-radius: 1rem;
+}
+
+/*Navegaciom*/
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--fondo-navegacion);
+    border-bottom: 2px solid var(--fondo-boton-navegacion);
+}
+
+nav a,
+#MenuBtn,
+i {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    /* text-shadow: 0px 0px 1px black; */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--fondo-boton-navegacion);
+}
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+li {
+    margin-top: .5rem;
+    list-style-type: decimal;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: Añadir descripcion -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripcion">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Preload se usa para cargar todo antes de la pagina (Ayuda a que todo cargue mas rapido) -->
+    <link rel="preload" href="../css/normalize.css" as="style">
+
+    <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Tips para programadores</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="MenuBtn">
+                <a href="#" onclick="ToggleMenu()">
+                    <i class="bi bi-list"></i>
+                    <span id="BotonTexto">
+                        Abrir
+                    </span>
+                </a>
+            </div>
+            <!-- <i class="bi bi-emoji-smile"></i> -->
+            <a href="#">Nosotros</a>
+            <a href="../index.html">Menu</a>
+            <a href="#">Inicio</a>
+            <a href="#">Tips</a>
+        </nav>
+    </header>
+    <main>
+        <div class="Pagina">
+            <div class="MenuScroll">
+                <div class="Menu">
+                    <div id="MenuContenido">
+                        <!-- <a href="Tips.html" target="_top">Tips</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="Informacion">
+                    <h1 class="texto-centrado">¿Cómo cargar más rápido tu página?</h1>
+                    <p class="texto-centrado">Se puede utilizar el atributo preload dentro del de rel, en la etiqueta &ltlink&gt para cargar los recursos lo más rápido y antes posible.</p>
+                    <h2 class="texto-centrado">Ejemplo de codigo</h2>
+                    <div class="codigo contenedor-centrado">
+                        <p class="codigo-contenido ">
+                            <span class="etiqueta">head</span> <br>
+                            <span class="etiqueta tabulacion">link rel="preload" href="css/bootstrap.min.css" as="style"</span> <br>
+                            <span class="etiqueta tabulacion">link href="css/bootstrap.min.css" rel="stylesheet"</span> <br>
+                            <br>
+                            <span class="etiqueta tabulacion">link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" as="script"</span> <br>
+                            <span class="etiqueta-cerrada">head</span> <br> <br>
+                            <span class="etiqueta">body</span> <br>
+                            <span class="etiqueta tabulacion">script src="js/bootstrap.bundle.min.js</span>
+                            <span class="etiqueta-cerrada">script</span> <br>
+                            <span class="etiqueta-cerrada">body</span>
+                        </p>
+                    </div>
+                    <div class="Descripcion">
+                        <h2>Explicacion</h2>
+                        <p>Este codigo precarga el framework de bootstrap, con su css y el script de javascript</p>
+                        <h3>¿Qué se puede precargar?</h3>
+                        <p>
+                            <ul>
+                                <li>Audio: Audios con la etiqueta <code><span class="etiqueta texto-negro">audio</span></code></li>
+
+                                <li>Document: Documentos con la etiqueta <code><span class="etiqueta texto-negro">frame</span> o <span class="etiqueta texto-negro">iframe</span></code></li>
+
+                                <li>Embed: Recursos con la etiqueta <code><span class="etiqueta texto-negro">embed</span></code></li>
+
+                                <li>Font: Fuentes</li>
+                                <li>Image: Imagenes</li>
+                                <li>Script: Codigos con la etiqueta <code><span class="etiqueta texto-negro">script</span></code></li>
+                                <li>Style: Archivos CSS</li>
+                                <li>Video: Recursos con la etiqueta <code><span class="etiqueta texto-negro">video</span></code></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
