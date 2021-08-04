@@ -142,18 +142,20 @@ html {
     border-radius: 1rem;
 }
 
-/*Navegaciom*/
+/*Navegacion*/
 
-nav {
+#Navegacion {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--fondo-navegacion);
     border-bottom: 2px solid var(--fondo-boton-navegacion);
 }
 
 nav a,
 #MenuBtn,
-i {
+i,
+#Inicio,
+#Nosotros {
     color: black;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -166,6 +168,8 @@ nav a:hover {
     color: white;
     background-color: var(--fondo-boton-navegacion);
 }
+
+/* Listas */
 
 ol {
     list-style-type: upper-alpha;

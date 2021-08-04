@@ -30,23 +30,26 @@
     <body>
         <header>
             <nav>
-                <div id="MenuBtn">
-                    <a href="#" onclick="ToggleMenu()">
-                        <i class="bi bi-list"></i>
-                        <span id="BotonTexto">
-                            Abrir
-                        </span>
-                    </a>
+                <div id="Navegacion">
+                    <div id="MenuBtn">
+                        <a href="#" onclick="ToggleMenu()">
+                            <i class="bi bi-list"></i>
+                            <span id="BotonTexto">
+                                Abrir
+                            </span>
+                        </a>
+                    </div>
+                    <span id="Inicio">
+                        <a href="/index.html">Inicio</a>
+                    </span>
+                    <span id="Nosotros">
+                        <a href="/Nosotros/">Nosotros</a>
+                    </span>
                 </div>
-                <i class="bi bi-emoji-smile"></i>
-                <a href="#">Nosotros</a>
-                <a href="../index.html">Menu</a>
-                <a href="#">Inicio</a>
-                <a href="#">Tips</a>
             </nav>
         </header>
         <main>
-            <div class="Pagina">
+            <div class="Pagina arreglar-margin">
                 <div class="MenuScroll">
                     <div class="Menu">
                         <div id="MenuContenido">
@@ -174,7 +177,7 @@
                                     <li>
                                         <p>
                                             Se nos abrira una ventana negra, es la consola de windows. Si seguimos todos los pasos correctos, ahi ponemos nuestro token y escribimos "
-                                            <code>ngrok.exe authtoken ************************</code>", luego presionamos enter. <br />
+                                            <b><code style="text-decoration: underline">ngrok.exe authtoken ************************</code></b>", luego presionamos enter. <br />
                                             Luego de eso, nos deberia decir "Authtoken saved to configuration file"
                                         </p>
                                     </li>
