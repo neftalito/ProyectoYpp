@@ -5,7 +5,7 @@
   --fondo-boton-navegacion: #006d77;
 }
 
-/* Box model hack, despues les explico */
+/* Box model hack */
 
 html {
   box-sizing: border-box;
