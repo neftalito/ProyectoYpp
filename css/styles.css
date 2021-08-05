@@ -3,6 +3,7 @@
   --codigo-texto: rgb(175, 175, 47);
   --fondo-navegacion: #00afb9;
   --fondo-boton-navegacion: #006d77;
+  --color-nombres: rgb(255, 255, 255);
 }
 
 /* Box model hack */
@@ -49,7 +50,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 200px;
-  /* height: 100%; */
+  height: fit-content;
   overflow-y: auto;
   overflow-x: hidden;
   margin-right: 5rem;
@@ -175,4 +176,43 @@ ol {
 li {
   margin-top: 0.5rem;
   list-style-type: decimal;
+}
+
+/* Nosotros */
+.Logos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+.Logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Logo p{
+  line-height: 2;
+  text-align: center;
+}
+.Logo h2{
+  color: var(--color-nombres);
+}
+.Logo img{
+  border-radius: 50%;
+}
+
+@media (max-width: 1372px) {
+  .Logos{
+    display: flex;
+    flex-direction: column;
+  }
+  .Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Logo p{
+    line-height: 2;
+    text-align: center;
+    max-width: 50%;
+  }
 }
