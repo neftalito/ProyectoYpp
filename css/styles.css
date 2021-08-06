@@ -80,7 +80,7 @@ html {
 
 .codigo {
   background-color: var(--fondo-codigo);
-  width: 90%;
+  width: fit-content;
   border: 2px black solid;
   border-radius: 1rem;
   color: white;
@@ -151,6 +151,15 @@ html {
   background-color: var(--fondo-boton-navegacion);
 }
 
+.Celular{
+  width: 100%;
+}
+
+.MenuScrollCelular{
+  width: 50%;
+  height: 100vh;
+}
+
 /*Navegacion*/
 
 #Navegacion {
@@ -158,8 +167,15 @@ html {
   justify-content: space-between;
   background-color: var(--fondo-navegacion);
   border-bottom: 2px solid var(--fondo-boton-navegacion);
-}
 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+main{
+  margin-top: 3rem;
+  /* Esto arregla que la barra no tape nada */
+}
 nav a,
 #MenuBtn,
 i,
@@ -224,5 +240,10 @@ li {
     line-height: 2;
     text-align: center;
     max-width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .Box-Shadow{
+    margin-right: 0;
   }
 }
