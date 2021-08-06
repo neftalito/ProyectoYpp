@@ -4,7 +4,7 @@ var MenuContenido = document.getElementById("MenuContenido");
 var MenuScroll = document.getElementsByClassName("MenuScroll");
 var Pagina = document.getElementsByClassName("Pagina");
 var media = window.matchMedia("(min-width: 1020px)");
-var mediajs = window.matchMedia("(max-width: 720px)");
+var mediajs = window.matchMedia("(max-width: 840px)");
 var Informacion = document.getElementsByClassName("Informacion");
 
 function ToggleMenu(){
@@ -44,11 +44,13 @@ if(media.matches){
     ToggleMenu();
 }
 
-
+console.log(mediajs.matches)
 if(mediajs.matches){
     let Botonmenu = document.getElementById("MenuBtn");
     Botonmenu.firstElementChild.onclick = function(){ToggleMenuCelu()};
     document.body.classList.add("Celular");
     MenuScroll[0].classList.add("contenedor-centrado");
     MenuScroll[0].classList.add("MenuScrollCelular");
+    ToggleMenuCelu();
+    ToggleMenuCelu();
 }

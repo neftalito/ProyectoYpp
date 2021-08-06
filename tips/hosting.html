@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- TODO: Añadir descripcion -->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Descripcion" />
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Preload se usa para cargar todo antes de la pagina (Ayuda a que todo cargue mas rapido) -->
+        <link rel="preload" href="../css/normalize.css" as="style" />
+
+        <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+
+        <link rel="stylesheet" href="../css/styles.css" />
+
+        <title>Tips para programadores</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="Navegacion">
+                    <div id="MenuBtn">
+                        <a href="#" onclick="ToggleMenu()">
+                            <i class="bi bi-list"></i>
+                            <span id="BotonTexto">
+                                Abrir
+                            </span>
+                        </a>
+                    </div>
+                    <span id="Inicio">
+                        <a href="/index.html">Inicio</a>
+                    </span>
+                    <span id="Nosotros">
+                        <a href="/Nosotros/">Nosotros</a>
+                    </span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="Pagina Pagina-Bg arreglar-margin">
+                <div class="MenuScroll">
+                    <div class="Menu">
+                        <div id="MenuContenido">
+                            <a href="/tips/Tips.html" target="_top">Tips</a>
+                            <a href="/tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a>
+                            <a href="/tips/como-trabajar-en-equipo.html" target="_top">Cómo trabajar en equipo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Informacion Box-Shadow">
+
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

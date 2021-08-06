@@ -7,7 +7,6 @@
 }
 
 /* Box model hack */
-
 html {
   box-sizing: border-box;
 }
@@ -17,6 +16,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* General */
 
 /* Background */
 .Pagina-Bg {
@@ -89,7 +89,15 @@ html {
   border-radius: 1rem;
   color: white;
 }
-
+.codigo p{
+  margin: 1rem 1rem;
+}
+@media (max-width: 680px) {
+  .codigo p{
+    font-size: 10px; 
+  }
+    
+}
 .tabulacion {
   margin-left: 40px;
 }
