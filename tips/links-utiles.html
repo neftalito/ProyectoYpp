@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- TODO: Añadir descripcion -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripcion" />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Preload se usa para cargar todo antes de la pagina (Ayuda a que todo cargue mas rapido) -->
+    <link rel="preload" href="../css/normalize.css" as="style" />
+
+    <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Links Útiles</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="Navegacion">
+          <div id="MenuBtn">
+            <a href="#" onclick="ToggleMenu()">
+              <i class="bi bi-list"></i>
+              <span id="BotonTexto"> Abrir </span>
+            </a>
+          </div>
+          <span id="Inicio">
+            <a href="/index.html">Inicio</a>
+          </span>
+          <span id="Nosotros">
+            <a href="/Nosotros/">Nosotros</a>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="Pagina Pagina-Bg arreglar-margin">
+        <div class="MenuScroll">
+          <div class="Menu">
+            <div id="MenuContenido">
+              <a href="/tips/Tips.html" target="_top">Tips</a>
+              <a href="/tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a>
+              <a href="/tips/como-trabajar-en-equipo.html" target="_top">Cómo trabajar en equipo</a>
+              <a id="seleccionado" href="#">Links utiles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Informacion Box-Shadow">
+          <h1 class="texto-centrado arreglar-margin">Links Útiles</h1>
+          <section class="lista-links">
+            <h2>Verificar código</h2>
+            <ul>
+              <li>
+                <a href="https://caniuse.com/">Caniuse.com</a>
+                <p>
+                  Pagina para ver la compatibilidad de tus propiedades css con
+                  diferentes navegadores
+                </p>
+              </li>
+              <li>
+                <a href="https://validator.w3.org">Validator.w3.org</a>
+                <p>Validador de codigo</p>
+              </li>
+            </ul>
+
+            <h2>Lorem Ipsum</h2>
+            <ul>
+              <li>
+                <a href="https://es.lipsum.com/">Lipsum.com</a>
+              </li>
+              <li>
+                <a href="https://slipsum.com/ipsum">Slipsum.com</a>
+              </li>
+              <li>
+                <a href="http://www.cupcakeipsum.com/">Cupcakeipsum.com</a>
+              </li>
+            </ul>
+
+            <h2>Colores/Gradientes/Cajas</h2>
+            <ul>
+              <li>
+                <a href="https://www.cssmatic.com/">Cssmatic.com</a>
+                <p>Generador de gradientes/cajas/etc</p>
+              </li>
+              <li>
+                <a href="https://mycolor.space/gradient">Mycolor.space</a>
+                <p>Generador de gradientes</p>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/colors/colors_converter.asp"
+                  >Color Converter de w3schools</a
+                >
+                <p>Generador de rgb</p>
+              </li>
+              <li>
+                <a href="http://colorcop.net/screenshots/">colorcop.net</a>
+                <p>
+                  Aplicacion para obtener el color de cualquier pixel en tu
+                  pantalla
+                </p>
+              </li>
+              <li>
+                <a href="https://css-tricks.com/">css-tricks.com</a>
+                <p>Articulos y trucos sobre css</p>
+              </li>
+              <li>
+                <a href="https://animejs.com/">animejs.com</a>
+                <p>Libreria de animaciones con javascript</p>
+              </li>
+            </ul>
+
+            <h2>Optimizar imagenes/gifs/etc</h2>
+            <ul>
+              <li><a href="https://ezgif.com/optimize">ezgif.com</a></li>
+            </ul>
+
+            <h2>Imagenes</h2>
+            <ul>
+              <li><a href="https://stock.adobe.com/ar/">stock.adobe.com</a></li>
+              <li><a href="https://mixkit.co/">mixkit.co</a></li>
+              <li><a href="https://www.pexels.com/es-es/">pexels.com</a></li>
+              <li><a href="https://www.freepik.es/">freepik.es</a></li>
+              <li><a href="https://pixabay.com/es/">pixabay.com</a></li>
+            </ul>
+
+            <h2>Placeholders</h2>
+            <ul>
+              <li><a href="https://placekitten.com/">placekitten.com</a></li>
+              <img src="https://placekitten.com/150/200" alt="#" />
+              <li><a href="https://placeholder.com/">placeholder.com</a></li>
+              <img src="https://via.placeholder.com/150x200" alt="#" />
+            </ul>
+
+            <h2>Juegos para aprender css</h2>
+            <h3>Selectores</h3>
+            <ul>
+              <li>
+                <a href="http://flukeout.github.io">Css Diner</a>
+              </li>
+            </ul>
+            <h3>Grid</h3>
+            <ul>
+              <li>
+                <a href="https://cssgridgarden.com/#es">cssgridgarden.com</a>
+              </li>
+            </ul>
+            <h3>Flexbox</h3>
+            <ul>
+              <li>
+                <a href="http://www.flexboxdefense.com">Flexboxdefense</a>
+              </li>
+              <li><a href="https://flexboxfroggy.com">Flexboxfroggy</a></li>
+            </ul>
+            <h2>Aplicaciones utiles</h2>
+            <ul>
+              <li>
+                <a href="https://responsively.app/">Responsively.app</a>
+                <p>
+                  App para ver tu pagina en diferentes resoluciones al mismo
+                  tiempo
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -38,7 +38,8 @@ html {
   padding: 1rem;
 }
 
-#MenuContenido a:hover {
+#MenuContenido a:hover{
+  color: white;
   background-color: var(--fondo-boton-navegacion);
 }
 
@@ -140,6 +141,16 @@ html {
   border-radius: 1rem;
 }
 
+.lista-links a{
+  color: white;
+}
+
+#seleccionado{
+  text-decoration: underline !important; 
+  color: white !important;
+  background-color: var(--fondo-boton-navegacion);
+}
+
 /*Navegacion*/
 
 #Navegacion {
@@ -162,7 +173,7 @@ i,
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover{
   color: white;
   background-color: var(--fondo-boton-navegacion);
 }
@@ -170,12 +181,11 @@ nav a:hover {
 /* Listas */
 
 ol {
-  list-style-type: upper-alpha;
+  list-style-type: decimal;
 }
 
 li {
   margin-top: 0.5rem;
-  list-style-type: decimal;
 }
 
 /* Nosotros */

@@ -3,22 +3,26 @@
 <!-- TODO: Añadir descripcion -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripcion">
-
-    <link rel="icon" type="image/jpg" href="img/Tips/compu1.jpg">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripcion" />
     <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Preload se usa para cargar todo antes de la pagina (Ayuda a que todo cargue mas rapido) -->
-    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="../css/normalize.css" as="style" />
 
     <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css" />
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css" />
 
     <title>Tips para programadores</title>
 </head>
@@ -49,14 +53,17 @@
             <div class="MenuScroll">
                 <div class="Menu">
                     <div id="MenuContenido">
-                        <!-- <a href="tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a> -->
+                            <a id="seleccionado" href="#">Tips</a>
+                            <a href="/tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a>
+                            <a href="/tips/como-trabajar-en-equipo.html" target="_top">Cómo trabajar en equipo</a>
+                            <a href="/tips/links-utiles.html" target="_top">Links utiles</a>
                     </div>
                 </div>
             </div>
 
             <div class="Informacion">
                 <div>
-                    <ol>
+                    <ul>
                         <li>
                             <h1>USAR LA <a onmouseover="document.getElementById('creatividad').src='../img/Tips/cerebro.jpg'" onmouseleave="document.getElementById('creatividad').src='#'"" href="#">Creatividad</a> <img id="creatividad" src="#" alt="" width="20px"></h1> 
                             
@@ -68,7 +75,7 @@
                         </li>
                         <li>
                             <h1>TRABAJAR EN EQUIPO <img src="../img/Tips/cajas.jpg" alt="" width="30px"></h1> 
-                            <p>Para poder programar se trabaja en quipo para agilizar el trabajo.Es genial porque conocemos gente nueva podemos compartir ideas.<b>Bonitos y GORDITOS muchachos</b>Cada persona es un importante y valioso miembro en el equipo.</p>
+                            <p>Para poder programar se trabaja en quipo para agilizar el trabajo.Es genial porque conocemos gente nueva podemos compartir ideas.<b> Bonitos y GORDITOS muchachos</b> Cada persona es un importante y valioso miembro en el equipo.</p>
                         </li>
                         <li>
                             <h1>EQUIVOCARSE ES APRENDER <img src="../img/Tips/graficos.jpg" alt="" width="30px"></h1> 
@@ -80,7 +87,7 @@
                                 dudar de nuestras cpacidades o pensamos que no somos buenos para nada.Es en ese momento donde tenemos que recordar que el error del código no me convierte a mí en un error.</b>Así que no desesperes que todo tiene solución.Confiá
                                 en vos.Si el creador de facebook pudo,vos también. </p>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
         </div>
