@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descripcion" />
 
+    <!-- Precargamos el styles.css -->
+    <link rel="preload" href="../css/styles.css" as="style" />
+
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -15,13 +18,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Normalize como css para normalizar todo el codigo css en diferentes navegadores -->
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -37,8 +33,18 @@
         <div id="Navegacion">
           <div id="MenuBtn">
             <a href="#" onclick="ToggleMenu()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
               </svg>
               <span id="BotonTexto"> Abrir </span>
             </a>
@@ -58,8 +64,12 @@
           <div class="Menu">
             <div id="MenuContenido">
               <a href="/tips/Tips.html" target="_top">Tips</a>
-              <a href="/tips/paginas-mas-rapidas.html" target="_top">Cómo cargar tu pagina más rápido</a>
-              <a href="/tips/como-trabajar-en-equipo.html" target="_top">Cómo trabajar en equipo</a>
+              <a href="/tips/paginas-mas-rapidas.html" target="_top"
+                >Cómo cargar tu pagina más rápido</a
+              >
+              <a href="/tips/como-trabajar-en-equipo.html" target="_top"
+                >Cómo trabajar en equipo</a
+              >
               <a id="seleccionado" href="#">Links utiles</a>
               <a href="/tips/hosting.html" target="_top">Hosting con Netlify</a>
             </div>
@@ -172,12 +182,22 @@
               </li>
               <li><a href="https://flexboxfroggy.com">Flexboxfroggy</a></li>
               <li>
-                <a href="https://mastery.games/flexboxzombies/">Flexbox Zombies</a>
-                <p>Al dia de la fecha, esta con un 100% de descuento, usualmente cuesta 179 dolares. Es un curso para aprender sobre flexbox jugando y matando zombies. Requiere registrarse</p>
-              </li> 
+                <a href="https://mastery.games/flexboxzombies/"
+                  >Flexbox Zombies</a
+                >
+                <p>
+                  Al dia de la fecha, esta con un 100% de descuento, usualmente
+                  cuesta 179 dolares. Es un curso para aprender sobre flexbox
+                  jugando y matando zombies. Requiere registrarse
+                </p>
+              </li>
               <li>
                 <a href="https://cssbattle.dev/">cssbattle.dev</a>
-                <p>Esta es una pagina donde aprendes css a traves de juegos, peleando con otros jugadores y llegando a las tablas de clasificacion</p>
+                <p>
+                  Esta es una pagina donde aprendes css a traves de juegos,
+                  peleando con otros jugadores y llegando a las tablas de
+                  clasificacion
+                </p>
               </li>
             </ul>
             <h2>Aplicaciones utiles</h2>
