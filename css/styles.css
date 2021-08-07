@@ -44,7 +44,7 @@ html {
 }
 
 .MenuScroll {
-  margin: 1rem 0;
+  margin: 1rem 0px 0px 1rem ;
   display: none;
   border: 2px solid var(--fondo-boton-navegacion);
   border-radius: 1rem;
