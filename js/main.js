@@ -44,7 +44,6 @@ if(media.matches){
     ToggleMenu();
 }
 
-console.log(mediajs.matches)
 if(mediajs.matches){
     let Botonmenu = document.getElementById("MenuBtn");
     Botonmenu.firstElementChild.onclick = function(){ToggleMenuCelu()};
