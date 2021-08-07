@@ -61,10 +61,6 @@ html {
 
 }
 
-#MenuBtn {
-  width: 200px;
-}
-
 /* Cómo mostrar la pagina */
 
 .Pagina {
@@ -204,6 +200,10 @@ i,
 nav a:hover{
   color: white;
   background-color: var(--fondo-boton-navegacion);
+}
+
+#MenuBtn {
+  width: 200px;
 }
 
 /* Listas */
