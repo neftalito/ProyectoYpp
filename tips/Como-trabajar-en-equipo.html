@@ -3,7 +3,7 @@
     <!-- TODO: Añadir descripcion -->
     <style>
         @media (max-width: 1024px) {
-            iframe[src="https://www.youtube.com/embed/Esnj9pntvyU"]{
+            #VideoYt{
                 width: 280px;
                 height: 157px;
             }
@@ -91,14 +91,20 @@
                         <li>
                             <h3>Visual Studio Code</h3>
                             <div class="texto-centrado">
+                                <a id="VideoPlaceholder" href="#" onclick="VerVideo()">
+                                    <img class="Borde" src="../img/ComoTrabajarEnEquipo/Placeholder.png" width="560" height="315">
+                                </a>
                                 <iframe
+                                    id="VideoYt"
                                     class="Borde"
                                     width="560"
                                     height="315"
-                                    src="https://www.youtube.com/embed/Esnj9pntvyU?rel=0&showinfo=0&autohide=1"
+                                    src="//:0"
                                     frameborder="0"
                                     allowfullscreen
+                                    hidden
                                 ></iframe>
+                                <!-- https://www.youtube.com/embed/Esnj9pntvyU?rel=0&showinfo=0&autohide=1 -->
                             </div>
                         </li>
 
@@ -244,5 +250,14 @@
 
         <footer></footer>
         <script defer src="../js/main.js"></script>
+        <script>
+            function VerVideo(){
+                let VideoYt = document.getElementById("VideoYt")
+                document.getElementById("VideoPlaceholder").remove();
+
+                VideoYt.src = "https://www.youtube.com/embed/Esnj9pntvyU?rel=0&showinfo=0&autohide=1";
+                VideoYt.hidden = false;
+            }
+        </script>
     </body>
 </html>
