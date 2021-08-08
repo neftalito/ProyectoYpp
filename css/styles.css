@@ -19,7 +19,8 @@ html {
 /* General */
 
 /* Background */
-.Pagina-Bg {
+.Pagina-Bg,
+html {
   background-color: var(--fondo-navegacion);
   background-size: cover;
 }
@@ -165,7 +166,6 @@ html {
 
 .MenuScrollCelular{
   width: 50%;
-  height: 100vh;
 }
 
 /*Navegacion*/
