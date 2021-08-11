@@ -34,7 +34,7 @@ html {
   text-shadow: 5px 4px 4px rgb(80, 79, 79);
 } */
 /* Background */
-.Pagina-Bg, body{
+/*.Pagina-Bg,*/ body{
   background-image: url('/img/bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
