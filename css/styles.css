@@ -37,10 +37,11 @@ html {
 .Pagina-Bg, body{
   background-image: url('/img/bg.webp');
   background-size: cover;
+  background-repeat: no-repeat;
 }  
 html {
   background-image: url('/img/bg.webp');
-  /* background-color: white; */
+  /* background-color: var; */
   background-repeat: repeat;
   background-size: cover;
 }
