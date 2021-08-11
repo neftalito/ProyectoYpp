@@ -39,12 +39,12 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }  
-html {
+
+/* html {
   background-image: url('/img/bg.webp');
-  /* background-color: var; */
   background-repeat: repeat;
   background-size: cover;
-}
+} */
 /* Menu Scroll */
 
 #MenuContenido {
