@@ -26,7 +26,7 @@ html {
 *{
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
-  color:white;
+  color:Black;
 }
 
 /* h1,h2{
@@ -99,7 +99,7 @@ html {
   margin: 0 1rem;
 }
 .Informacion *{
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px white;
 }
 
 /* Codigos */
