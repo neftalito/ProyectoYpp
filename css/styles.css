@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+
 :root {
   --fondo-codigo: #1c232c;
   --codigo-texto: rgb(175, 175, 47);
-  --fondo-navegacion: #00afb9;
-  --fondo-boton-navegacion: #006d77;
-  --color-nombres: rgb(255, 255, 255);
+  --fondo-navegacion: #c2dbfe5b;
+  --fondo-titulo: #9cb2ed;
+  --fondo-boton-navegacion: #9cb2ed;
+  --navegacion-hover: white;
+  --color-nombres: rgb(0, 0, 0);
+  --color-links: #e13ff0;
 }
 
 /* Box model hack */
@@ -18,10 +23,25 @@ html {
 }
 /* General */
 
+*{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  color:white;
+}
+
+/* h1,h2{
+  text-shadow: 5px 4px 4px var(--fondo-titulo);
+  text-shadow: 5px 4px 4px rgb(80, 79, 79);
+} */
 /* Background */
-.Pagina-Bg,
+.Pagina-Bg, body{
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+}  
 html {
-  background-color: var(--fondo-navegacion);
+  background-image: url('/img/bg.jpg');
+  /* background-color: white; */
+  background-repeat: repeat;
   background-size: cover;
 }
 /* Menu Scroll */
@@ -37,10 +57,11 @@ html {
   padding-top: 1rem;
   color: black;
   padding: 1rem;
+  font-weight: bold;
 }
 
 #MenuContenido a:hover{
-  color: white;
+  color: var(--navegacion-hover);
   background-color: var(--fondo-boton-navegacion);
 }
 
@@ -74,7 +95,11 @@ html {
 }
 
 .Informacion {
+  border: 2px solid var(--fondo-boton-navegacion);
   margin: 0 1rem;
+}
+.Informacion *{
+  text-shadow: 0 0 5px black;
 }
 
 /* Codigos */
@@ -102,6 +127,7 @@ html {
 .etiqueta,
 .etiqueta-cerrada {
   color: white;
+  text-shadow: none;
 }
 
 .etiqueta::after,
@@ -141,7 +167,7 @@ html {
 
 .Box-Shadow {
   padding: 0 2rem;
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: var(--fondo-navegacion);/*rgba(0, 0, 0, 0.075);*/
   border-radius: 1rem;
   margin: 1rem 0;
   margin-right: 1rem;
@@ -151,12 +177,14 @@ html {
 }
 
 .lista-links a{
-  color: white;
+  color: var(--color-links);
+  font-weight: bold;
+  text-shadow: none !important;
 }
 
 #seleccionado{
   text-decoration: underline !important; 
-  color: white !important;
+  color: var(--navegacion-hover) !important;
   background-color: var(--fondo-boton-navegacion);
 }
 
@@ -168,13 +196,17 @@ html {
   width: 50%;
 }
 
+.no-text-border{
+    text-shadow: none;
+}
+
 /*Navegacion*/
 
 #Navegacion {
   display: flex;
   justify-content: space-between;
   background-color: var(--fondo-navegacion);
-  border-bottom: 2px solid var(--fondo-boton-navegacion);
+  border-bottom: 2px solid var(--fondo-titulo);
 
   position: fixed;
   top: 0;
@@ -188,7 +220,8 @@ nav a,
 #MenuBtn,
 i,
 #Inicio,
-#Nosotros {
+#Nosotros
+{
   color: black;
   padding: 1rem 1rem;
   text-decoration: none;
@@ -196,9 +229,16 @@ i,
   text-transform: uppercase;
   font-weight: bold;
 }
+#MenuBtn span{
+  color: black;
+}
+
+#MenuBtn a:hover{
+  background-color: var(--fondo-boton-navegacion);
+}
 
 nav a:hover{
-  color: white;
+  color: var(--navegacion-hover);
   background-color: var(--fondo-boton-navegacion);
 }
 
@@ -233,9 +273,13 @@ li {
 }
 .Logo h2{
   color: var(--color-nombres);
+  font-weight: bold;
 }
 .Logo img{
   border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  border: 3px solid black;
 }
 
 @media (max-width: 1372px) {
@@ -258,4 +302,16 @@ li {
   .Box-Shadow{
     margin-right: 0;
   }
+}
+
+.Descripcion-Nosotros::before{
+  content:"<< ";
+  color: black;
+}
+.Descripcion-Nosotros::after{
+  content:" >>";
+  color: black;
+}
+.Descripcion-Nosotros{
+  font-weight: bold;
 }

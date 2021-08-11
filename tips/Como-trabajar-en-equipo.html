@@ -37,11 +37,13 @@
                 <div id="Navegacion">
                     <div id="MenuBtn">
                         <a href="#" onclick="ToggleMenu()">
-                            <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                             </svg>
                             <span id="BotonTexto">
-                                Abrir
+                                <p>
+                                    Abrir
+                                </p> 
                             </span>
                         </a>
                     </div>
@@ -73,10 +75,10 @@
 
                     <h2>Requisitos</h2>
 
-                    <ul>
-                        <li>Visual Studio Code (<a href="https://code.visualstudio.com/">Descargar</a>)</li>
-                        <li>Extensiones: <a href="https://visualstudio.microsoft.com/es/services/live-share/">Live Share</a> y <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></li>
-                        <li><a href="https://ngrok.com/">Ngrok</a></li>
+                    <ul class="lista-links">
+                        <li>Visual Studio Code (<a href="https://code.visualstudio.com/" target="_blank">Descargar</a>)</li>
+                        <li>Extensiones: <a href="https://visualstudio.microsoft.com/es/services/live-share/" target="_blank">Live Share</a> y <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a></li>
+                        <li><a href="https://ngrok.com/" target="_blank">Ngrok</a></li>
                     </ul>
 
                     <h2>¿Para qué usaremos cada cosa?</h2>
@@ -194,8 +196,8 @@
                                             <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Descarga.webp" />
                                         </div>
                                     </li>
-                                    <li>
-                                        <p>Se les descargará un archivo .zip, este lo descompriremos con un programa como <a href="https://www.7-zip.org/">7zip</a> haciendole click derecho y apretando donde dice extraer aqui</p>
+                                    <li class="lista-links">
+                                        <p>Se les descargará un archivo .zip, este lo descompriremos con un programa como <a href="https://www.7-zip.org/" target="_blank">7zip</a> haciendole click derecho y apretando donde dice extraer aqui</p>
                                         <div class="texto-centrado">
                                             <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivo.webp" />
                                         </div>
@@ -209,7 +211,7 @@
                                     <li>
                                         <p>
                                             Se nos abrira una ventana negra, es la consola de windows. Si seguimos todos los pasos correctos, ahi ponemos nuestro token y escribimos "
-                                            <b><code style="text-decoration: underline">ngrok.exe authtoken ************************</code></b>", luego presionamos enter. <br />
+                                            <b><code class="no-text-border" style="text-decoration: underline">ngrok.exe authtoken ************************</code></b>", luego presionamos enter. <br />
                                             Luego de eso, nos deberia decir "Authtoken saved to configuration file"
                                         </p>
                                     </li>
