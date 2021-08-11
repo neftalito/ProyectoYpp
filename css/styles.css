@@ -247,7 +247,7 @@ i,
 #MenuBtn a:hover > span{
   color: white;
 }
-#MenuBtn a:hover svg{
+#MenuBtn a:hover > svg{
   fill: white;
 }
 nav a:hover{
