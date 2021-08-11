@@ -99,7 +99,7 @@ html {
   border: 2px solid var(--fondo-boton-navegacion);
   margin: 0 1rem;
 }
-.Informacion *{
+.Informacion *, .MenuScroll{
   text-shadow: 0 0 5px white;
 }
 
