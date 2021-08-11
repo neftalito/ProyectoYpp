@@ -99,7 +99,7 @@ html {
   border: 2px solid var(--fondo-boton-navegacion);
   margin: 0 1rem;
 }
-.Informacion *, .MenuScroll{
+.Informacion *, .MenuScroll, nav{
   text-shadow: 0 0 5px white;
 }
 
@@ -229,6 +229,7 @@ i,
 #Inicio,
 #Nosotros
 {
+  border-radius: 1rem;
   color: black;
   padding: 1rem 1rem;
   text-decoration: none;
@@ -240,10 +241,15 @@ i,
   color: black;
 }
 
-#MenuBtn a:hover{
+/* #MenuBtn a:hover{
   background-color: var(--fondo-boton-navegacion);
+} */
+#MenuBtn a:hover > span{
+  color: white;
 }
-
+#MenuBtn a:hover svg{
+  fill: white;
+}
 nav a:hover{
   color: var(--navegacion-hover);
   background-color: var(--fondo-boton-navegacion);
