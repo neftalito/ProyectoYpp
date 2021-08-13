@@ -8,6 +8,13 @@
                 height: 157px;
             }
         }
+        details{padding-bottom: 2rem;}
+        details summary {cursor: pointer;}
+        details summary > * {display: inline;}
+        summary {list-style: none}
+        summary::-webkit-details-marker {display: none; }
+        details summary::before {content:"🡒";}
+        details[open] summary::before {content:"🡑 ";}
     </style>
     <head>
         <meta charset="UTF-8" />
@@ -92,165 +99,175 @@
                     <ul>
                         <li>
                             <h3>Visual Studio Code</h3>
-                            <div class="texto-centrado">
-                                <a id="VideoPlaceholder" href="#" onclick="VerVideo()">
-                                    <img class="Borde" src="../img/ComoTrabajarEnEquipo/Placeholder.webp" width="560" height="315">
-                                </a>
-                                <iframe
-                                    id="VideoYt"
-                                    class="Borde"
-                                    width="560"
-                                    height="315"
-                                    src="//:0"
-                                    frameborder="0"
-                                    allowfullscreen
-                                    hidden
-                                ></iframe>
-                                <!-- https://www.youtube.com/embed/Esnj9pntvyU?rel=0&showinfo=0&autohide=1 -->
-                            </div>
+                            <details>
+                                <summary>Ver más</summary>
+                                <div class="texto-centrado">
+                                    <a id="VideoPlaceholder" href="#" onclick="VerVideo()">
+                                        <img class="Borde" src="../img/ComoTrabajarEnEquipo/Placeholder.webp" width="560" height="315">
+                                    </a>
+                                    <iframe
+                                        id="VideoYt"
+                                        class="Borde"
+                                        width="560"
+                                        height="315"
+                                        src="//:0"
+                                        frameborder="0"
+                                        allowfullscreen
+                                        hidden
+                                    ></iframe>
+                                    <!-- https://www.youtube.com/embed/Esnj9pntvyU?rel=0&showinfo=0&autohide=1 -->
+                                </div>
+                            </details>
+                            
                         </li>
 
                         <li>
                             <h3>Live Share</h3>
-
-                            <div>
-                                <ol>
-                                    <li>
-                                        <p>Primero lo instalamos como una extensión, en la pestaña de extensiones buscamos Live share y lo instalamos.</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/ExtensionLiveShare.webp" alt="">
-                                        </div>
-                                    </li>
-
-                                    
-                                    <li>
-                                        <p>Luego de instalarlo, deberemos iniciar sesion (ya sea con Microsoft o con Github).</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/InicioSesion.webp" alt="">
-                                        </div>
-                                        <br />
-                                        <p>Una vez ya registrados, <b>podemos crear una sesion de trabajo o bien unirnos a una.</b></p>
-                                    </li>
-                                        <p>
-                                            Para crear la sesion nosotros, hacemos click en nuestro nombre de usuario y elegimos <b>Start Collaboration Session</b> se creara un enlace de invitacion que debemos compartir con nuestros
-                                            compañeros. Para nosotros unirnos a una sesion, elegimos la opcion <b>Join Collaboration Session</b> nos van a pedir el enlace de invitacion de el anfitrion, lo ingresamos.
-                                        </p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/Compartir.webp" alt="">
-                                        </div>
-                                </ol>
-                            </div>
+                            <details>
+                                <summary>Ver más</summary>
+                                <div>
+                                    <ol>
+                                        <li>
+                                            <p>Primero lo instalamos como una extensión, en la pestaña de extensiones buscamos Live share y lo instalamos.</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/ExtensionLiveShare.webp" alt="">
+                                            </div>
+                                        </li>
+    
+                                        
+                                        <li>
+                                            <p>Luego de instalarlo, deberemos iniciar sesion (ya sea con Microsoft o con Github).</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/InicioSesion.webp" alt="">
+                                            </div>
+                                            <br />
+                                            <p>Una vez ya registrados, <b>podemos crear una sesion de trabajo o bien unirnos a una.</b></p>
+                                        </li>
+                                            <p>
+                                                Para crear la sesion nosotros, hacemos click en nuestro nombre de usuario y elegimos <b>Start Collaboration Session</b> se creara un enlace de invitacion que debemos compartir con nuestros
+                                                compañeros. Para nosotros unirnos a una sesion, elegimos la opcion <b>Join Collaboration Session</b> nos van a pedir el enlace de invitacion de el anfitrion, lo ingresamos.
+                                            </p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveShare/Compartir.webp" alt="">
+                                            </div>
+                                    </ol>
+                                </div>
+                            </details>
                         </li>
 
                         <li>
                             <h3>Live Server</h3>
-
-                            <div>
-                                <p>En la pestaña de extensiones, buscamos Live Server y lo instalamos</p>
-                                <div class="texto-centrado">
-                                    <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/ExtensionLiveServer.webp" alt="">
-                                </div>
-                                <br />
-                                <p>
-                                    Hacemos clic en el engranaje y seleccionamos <b>Extension Settings</b> Dentro de el apartado <b>User</b> vamos a la opcion de <b>AutoSave</b> y cambiamos el ajuste de off por OnFocusChange, esto para que
-                                    cada vez que hagamos click fuera del archivo se guarde automaticamente.
-                                    <div class="contenedor-centrado" style="width:50%">
-                                        <ol>
-                                            <li>
-                                                <br>
-                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/ConfiguracionLiveServer.webp" alt="">
-                                            </li>
-                                            <li>
-                                                <br>
-                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/Autosave.webp" alt="">
-                                            </li>
-
-                                        </ol>
+                            <details>
+                                <summary>Ver más</summary>
+                                <div>
+                                    <p>En la pestaña de extensiones, buscamos Live Server y lo instalamos</p>
+                                    <div class="texto-centrado">
+                                        <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/ExtensionLiveServer.webp" alt="">
                                     </div>
-                                </p>
-                            </div>
+                                    <br />
+                                    <p>
+                                        Hacemos clic en el engranaje y seleccionamos <b>Extension Settings</b> Dentro de el apartado <b>User</b> vamos a la opcion de <b>AutoSave</b> y cambiamos el ajuste de off por OnFocusChange, esto para que
+                                        cada vez que hagamos click fuera del archivo se guarde automaticamente.
+                                        <div class="contenedor-centrado" style="width:50%">
+                                            <ol>
+                                                <li>
+                                                    <br>
+                                                    <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/ConfiguracionLiveServer.webp" alt="">
+                                                </li>
+                                                <li>
+                                                    <br>
+                                                    <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/LiveServer/Autosave.webp" alt="">
+                                                </li>
+    
+                                            </ol>
+                                        </div>
+                                    </p>
+                                </div>
+                            </details>
                         </li>
 
                         <li>
                             <h3>Ngrok</h3>
-
-                            <div>
-                                <ol>
-                                    <li>
-                                        <p>Creamos una cuenta e iniciamos sesion.</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/CrearCuenta.webp" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Una vez creada la cuenta, nos enviara al "dashboard" de ngrok. Y ahi nos daran un token para poder utilizar el programa</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Token.webp" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Luego de obtener el token, descargamos el programa y recuerden elegir el sistema operativo que utilizan</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Descarga.webp" />
-                                        </div>
-                                    </li>
-                                    <li class="lista-links">
-                                        <p>Se les descargará un archivo .zip, este lo descompriremos con un programa como <a href="https://www.7-zip.org/" target="_blank">7zip</a> haciendole click derecho y apretando donde dice extraer aqui</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivo.webp" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>Hacemos click sobre donde dice la ruta del programa, en un espacio vacío, y escribimo "cmd". Luego presionen Enter</p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivoCmd.webp" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Se nos abrira una ventana negra, es la consola de windows. Si seguimos todos los pasos correctos, ahi ponemos nuestro token y escribimos "
-                                            <b><code class="no-text-border" style="text-decoration: underline">ngrok.exe authtoken ************************</code></b>", luego presionamos enter. <br />
-                                            Luego de eso, nos deberia decir "Authtoken saved to configuration file"
-                                        </p>
-                                    </li>
-                                </ol>
-
-                                <h2 class="texto-centrado">Ahora, ¿Cómo se usa?</h2>
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Es muy facil, habiendo seguido todos los pasos anteriores, ya deberia estar configurado, y para usarlo, podemos hacer el paso donde dice de poner cmd arriba de la ventana. Una ves abierta la
-                                            consola, el programa funciona de la siguiente manera <br />
-                                            "ngrok.exe (protocolo) (puerto)". Entonces, en la consola ponemos "ngrok.exe http 5500".
-                                            <b>
-                                                ¿Por qué? Bien "ngrok.exe" esta referenciando al programa, "https" le dice al programa que queremos usar el protocolo http, que es de paginas web, y el "5500" le dice al programa que vamos a
-                                                usar el puerto 5500, que es el puerto que utiliza live server para ver la pagina en tiempo real
-                                            </b>
-                                            <br />
-                                            Una vez hayamos hecho todo eso, nos aparecera una ventana asi
-                                        </p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokAndando.webp" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Lo unico que tenemos que hacer es copiar uno de los dos links de "forwarding" y pasarselo a nuestros amigos, en nuestro caso vamos a usar el link "https://04594e008eb9.ngrok.io" y ya podremos
-                                            compartirlo con nuestros amigos para editar la pagina
-                                        </p>
-                                        <div class="texto-centrado">
-                                            <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/UrlFin.webp" />
-                                        </div>
-                                    </li>
-                                </ol>
-                            </div>
+                            <details>
+                                <summary>Ver más</summary>
+                                <div>
+                                    <ol>
+                                        <li>
+                                            <p>Creamos una cuenta e iniciamos sesion.</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/CrearCuenta.webp" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Una vez creada la cuenta, nos enviara al "dashboard" de ngrok. Y ahi nos daran un token para poder utilizar el programa</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Token.webp" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Luego de obtener el token, descargamos el programa y recuerden elegir el sistema operativo que utilizan</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/Descarga.webp" />
+                                            </div>
+                                        </li>
+                                        <li class="lista-links">
+                                            <p>Se les descargará un archivo .zip, este lo descompriremos con un programa como <a href="https://www.7-zip.org/" target="_blank">7zip</a> haciendole click derecho y apretando donde dice extraer aqui</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivo.webp" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>Hacemos click sobre donde dice la ruta del programa, en un espacio vacío, y escribimo "cmd". Luego presionen Enter</p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokArchivoCmd.webp" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Se nos abrira una ventana negra, es la consola de windows. Si seguimos todos los pasos correctos, ahi ponemos nuestro token y escribimos "
+                                                <b><code class="no-text-border" style="text-decoration: underline">ngrok.exe authtoken ************************</code></b>", luego presionamos enter. <br />
+                                                Luego de eso, nos deberia decir "Authtoken saved to configuration file"
+                                            </p>
+                                        </li>
+                                    </ol>
+    
+                                    <h2 class="texto-centrado">Ahora, ¿Cómo se usa?</h2>
+                                    <ol>
+                                        <li>
+                                            <p>
+                                                Es muy facil, habiendo seguido todos los pasos anteriores, ya deberia estar configurado, y para usarlo, podemos hacer el paso donde dice de poner cmd arriba de la ventana. Una ves abierta la
+                                                consola, el programa funciona de la siguiente manera <br />
+                                                "ngrok.exe (protocolo) (puerto)". Entonces, en la consola ponemos "ngrok.exe http 5500".
+                                                <b>
+                                                    ¿Por qué? Bien "ngrok.exe" esta referenciando al programa, "https" le dice al programa que queremos usar el protocolo http, que es de paginas web, y el "5500" le dice al programa que vamos a
+                                                    usar el puerto 5500, que es el puerto que utiliza live server para ver la pagina en tiempo real
+                                                </b>
+                                                <br />
+                                                Una vez hayamos hecho todo eso, nos aparecera una ventana asi
+                                            </p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/NgrokAndando.webp" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Lo unico que tenemos que hacer es copiar uno de los dos links de "forwarding" y pasarselo a nuestros amigos, en nuestro caso vamos a usar el link "https://04594e008eb9.ngrok.io" y ya podremos
+                                                compartirlo con nuestros amigos para editar la pagina
+                                            </p>
+                                            <div class="texto-centrado">
+                                                <img class="img-fluid" src="../img/ComoTrabajarEnEquipo/Ngrok/UrlFin.webp" />
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </details>
                         </li>
                     </ul>
                 </div>
             </div>
         </main>
 
-        <footer>
+        <footer class="texto-centrado">
             <p style="color:black; font-weight: normal">&copy; Todos los derechos reservados 2021-2999</p>
         </footer>
         <script defer src="../js/main.js"></script>

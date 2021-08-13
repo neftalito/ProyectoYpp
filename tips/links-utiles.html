@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- TODO: Añadir descripcion -->
-
+  <style>
+    /* details{padding-bottom: 2rem;} */
+    details summary {cursor: pointer;}
+    details summary > * {display: inline;}
+    summary {list-style: none}
+    summary::-webkit-details-marker {display: none; }
+    details summary::before {content:"🡒";}
+    details[open] summary::before {content:"🡑 ";}
+    img{
+      transition: transform .2s ease-out; 
+    }
+    img:hover{
+      transform:scale(2);
+    }
+  </style>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +40,7 @@
 
     <link rel="icon" type="image/webp" href="../img/icono.webp">
 
-    <title>Links Útiles</title>
+    <title>Links útiles</title>
   </head>
 
   <body>
@@ -80,134 +94,265 @@
 
         <div class="Informacion Box-Shadow">
           <h1 class="texto-centrado arreglar-margin">Links Útiles</h1>
-          <section class="lista-links">
+          <section class="lista-links" style="margin-bottom: 5rem">
             <h2>Verificar código</h2>
-            <ul>
-              <li>
-                <a href="https://caniuse.com/" target="_blank">Caniuse.com</a>
-                <p>
-                  Pagina para ver la compatibilidad de tus propiedades css con
-                  diferentes navegadores
-                </p>
-              </li>
-              <li>
-                <a href="https://validator.w3.org" target="_blank">Validator.w3.org</a>
-                <p>Validador de codigo</p>
-              </li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://caniuse.com/" target="_blank">Caniuse.com</a>
+                  <p>
+                    Pagina para ver la compatibilidad de tus propiedades css con
+                    diferentes navegadores
+                  </p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/caniuse.webp" width="30%">
+                </div>
+                </li>
+                <li>
+                  <a href="https://validator.w3.org" target="_blank">Validator.w3.org</a>
+                  <p>Validador de codigo</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/validatorw3.webp" width="30%">
+                  </div>
+                </li>
+              </ul>
+            </details>
+            <hr>
 
             <h2>Lorem Ipsum</h2>
-            <ul>
-              <li>
-                <a href="https://es.lipsum.com/" target="_blank">Lipsum.com</a>
-              </li>
-              <li>
-                <a href="https://slipsum.com/ipsum" target="_blank">Slipsum.com</a>
-              </li>
-              <li>
-                <a href="https://www.cupcakeipsum.com/" target="_blank">Cupcakeipsum.com</a>
-              </li>
-            </ul>
-
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://es.lipsum.com/" target="_blank">Lipsum.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/lipsum.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://slipsum.com/ipsum" target="_blank">Slipsum.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/slipsum.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://www.cupcakeipsum.com/" target="_blank">Cupcakeipsum.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/cupcakeipsum.webp" width="30%">
+                  </div>
+                </li>
+              </ul>
+            </details>
+            
+            <hr>
             <h2>Colores/Gradientes/Cajas</h2>
-            <ul>
-              <li>
-                <a href="https://www.cssmatic.com/" target="_blank">Cssmatic.com</a>
-                <p>Generador de gradientes/cajas/etc</p>
-              </li>
-              <li>
-                <a href="https://mycolor.space/gradient" target="_blank">Mycolor.space</a>
-                <p>Generador de gradientes</p>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank">Color Converter de w3schools</a>
-                <p>Generador de rgb</p>
-              </li>
-              <li>
-                <a href="https://colorcop.net/screenshots/" target="_blank">colorcop.net</a>
-                <p>
-                  Aplicacion para obtener el color de cualquier pixel en tu
-                  pantalla
-                </p>
-              </li>
-              <li>
-                <a href="https://css-tricks.com/" target="_blank">css-tricks.com</a>
-                <p>Articulos y trucos sobre css</p>
-              </li>
-              <li>
-                <a href="https://animejs.com/" target="_blank">animejs.com</a>
-                <p>Libreria de animaciones con javascript</p>
-              </li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://www.cssmatic.com/" target="_blank">Cssmatic.com</a>
+                  <p>Generador de gradientes/cajas/etc</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/cssmatic.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://mycolor.space/gradient" target="_blank">Mycolor.space</a>
+                  <p>Generador de gradientes</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/colorspace.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://www.w3schools.com/colors/colors_converter.asp" target="_blank">Color Converter de w3schools</a>
+                  <p>Generador de rgb</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/colorconverter.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://colorcop.net/screenshots/" target="_blank">colorcop.net</a>
+                  <p>
+                    Aplicacion para obtener el color de cualquier pixel en tu
+                    pantalla
+                  </p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/colorcop.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://css-tricks.com/" target="_blank">css-tricks.com</a>
+                  <p>Articulos y trucos sobre css</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/csstricks.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://animejs.com/" target="_blank">animejs.com</a>
+                  <p>Libreria de animaciones con javascript</p>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/animejs.webp" width="30%">
+                  </div>
+                </li>
+              </ul>
+            </details>
+            <hr>
 
             <h2>Optimizar imagenes/gifs/etc</h2>
-            <ul>
-              <li><a href="https://ezgif.com/optimize" target="_blank">ezgif.com</a></li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://ezgif.com/optimize" target="_blank">ezgif.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/ezgif.webp" width="30%">
+                  </div>
+                </li>
+              </ul>
+            </details>
 
-            <h2>Imagenes</h2>
-            <ul>
-              <li><a href="https://stock.adobe.com/ar/" target="_blank">stock.adobe.com</a></li>
-              <li><a href="https://mixkit.co/" target="_blank">mixkit.co</a></li>
-              <li><a href="https://www.pexels.com/es-es/" target="_blank">pexels.com</a></li>
-              <li><a href="https://www.freepik.es/" target="_blank">freepik.es</a></li>
-              <li><a href="https://pixabay.com/es/" target="_blank">pixabay.com</a></li>
-            </ul>
+            <hr>
+            <h2>Imagenes para usar en tu página</h2>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://stock.adobe.com/ar/" target="_blank">stock.adobe.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/stockadobe.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://mixkit.co/" target="_blank">mixkit.co</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/mixkit.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://www.pexels.com/es-es/" target="_blank">pexels.com</a>
+                  <div class="texto-centrado">
+                    <img class="img-fluid" src="/img/LinksUtiles/pexels.webp" width="30%">
+                  </div>
+                </li>
+                <li>
+                  <a href="https://www.freepik.es/" target="_blank">freepik.es</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/freepik.webp' width='30%'>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://pixabay.com/es/" target="_blank">pixabay.com</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/pixabay.webp' width='30%'>
+                  </div>
+                  </li>
+              </ul>
+            </details>
+            <hr>
 
             <h2>Placeholders</h2>
-            <ul>
-              <li><a href="https://placekitten.com/" target="_blank">placekitten.com</a></li>
-              <img src="https://placekitten.com/150/200" alt="#" />
-              <li><a href="https://placeholder.com/" target="_blank">placeholder.com</a></li>
-              <img src="https://via.placeholder.com/150x200" alt="#" />
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://placekitten.com/" target="_blank">placekitten.com</a>
+                  <div>
+                    <img src="https://placekitten.com/150/200" alt="#"/>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://placeholder.com/" target="_blank">placeholder.com</a>
+                  <div>
+                    <img src="https://via.placeholder.com/150x200" alt="#" />
+                  </div>
+                </li>
+              </ul>
+            </details>
+            <hr>
 
-            <h2>Juegos para aprender css</h2>
-            <h3>Selectores</h3>
-            <ul>
-              <li>
-                <a href="https://flukeout.github.io" target="_blank">Css Diner</a>
-              </li>
-            </ul>
+            <h2>Juegos para aprender css:</h2>
+            <h3>Practica de selectores</h3>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://flukeout.github.io" target="_blank">Css Diner</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/cssdinner.webp' width='30%'>
+                  </div>
+                </li>
+              </ul>
+            </details>
             <h3>Grid</h3>
-            <ul>
-              <li>
-                <a href="https://cssgridgarden.com/#es" target="_blank">cssgridgarden.com</a>
-              </li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://cssgridgarden.com/#es" target="_blank">cssgridgarden.com</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/cssgridgarden.webp' width='30%'>
+                  </div>
+                </li>
+              </ul>
+            </details>
             <h3>Flexbox</h3>
-            <ul>
-              <li>
-                <a href="https://www.flexboxdefense.com" target="_blank">Flexboxdefense</a>
-              </li>
-              <li><a href="https://flexboxfroggy.com" target="_blank">Flexboxfroggy</a></li>
-              <li>
-                <a href="https://mastery.games/flexboxzombies/" target="_blank">Flexbox Zombies</a>
-                <p>
-                  Al dia de la fecha, esta con un 100% de descuento, usualmente
-                  cuesta 179 dolares. Es un curso para aprender sobre flexbox
-                  jugando y matando zombies. Requiere registrarse
-                </p>
-              </li>
-              <li>
-                <a href="https://cssbattle.dev/" target="_blank">cssbattle.dev</a>
-                <p>
-                  Esta es una pagina donde aprendes css a traves de juegos,
-                  peleando con otros jugadores y llegando a las tablas de
-                  clasificacion
-                </p>
-              </li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://www.flexboxdefense.com" target="_blank">Flexboxdefense</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/flexboxdefense.webp' width='30%'>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://flexboxfroggy.com" target="_blank">Flexboxfroggy</a>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/flexboxfroggy.webp' width='30%'>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://mastery.games/flexboxzombies/" target="_blank">Flexbox Zombies</a>
+                  <p>
+                    Al dia de la fecha, esta con un 100% de descuento, usualmente
+                    cuesta 179 dolares. Es un curso para aprender sobre flexbox
+                    jugando y matando zombies. Requiere registrarse
+                  </p>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/flexboxzombies.webp' width='30%'>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://cssbattle.dev/" target="_blank">cssbattle.dev</a>
+                  <p>
+                    Esta es una pagina donde aprendes css a traves de juegos,
+                    peleando con otros jugadores y llegando a las tablas de
+                    clasificacion
+                  </p>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/cssbattle.webp' width='30%'>
+                  </div>
+                </li>
+              </ul>
+            </details>
+            <hr>
             <h2>Aplicaciones utiles</h2>
-            <ul>
-              <li>
-                <a href="https://responsively.app/" target="_blank">Responsively.app</a>
-                <p>
-                  App para ver tu pagina en diferentes resoluciones al mismo
-                  tiempo
-                </p>
-              </li>
-            </ul>
+            <details>
+              <summary>Ver más</summary>
+              <ul>
+                <li>
+                  <a href="https://responsively.app/" target="_blank">Responsively.app</a>
+                  <p>
+                    App para ver tu pagina en diferentes resoluciones al mismo
+                    tiempo
+                  </p>
+                  <div class='texto-centrado'>
+                    <img class='img-fluid' src='/img/LinksUtiles/responsively.webp' width='30%'>
+                  </div>
+                </li>
+              </ul>
+            </details>
           </section>
         </div>
       </div>

@@ -10,12 +10,14 @@ var Informacion = document.getElementsByClassName("Informacion");
 function ToggleMenu(){
     if(Menu){
         BotonTexto.textContent = "Abrir";
+        BotonTexto.textContent = "Menu";
         MenuScroll[0].style.display = "none";
         Pagina[0].style.display = "block";
         Menu = false;
     }
     else{
         BotonTexto.textContent = "Cerrar";
+        BotonTexto.textContent = "Menu";
         MenuScroll[0].style.display = "Flex";
         Pagina[0].style.display = "Grid";
         Menu=true;
@@ -25,6 +27,7 @@ function ToggleMenuCelu(){
     if(Menu && mediajs.matches){
         //Cerrado
         BotonTexto.textContent = "Abrir";
+        BotonTexto.textContent = "Menu";
         MenuScroll[0].style.display = "none";
         Pagina[0].style.display = "block";
         Informacion[0].style.display = "Block";
@@ -33,6 +36,7 @@ function ToggleMenuCelu(){
     else{
         //Abierto
         BotonTexto.textContent = "Cerrar";
+        BotonTexto.textContent = "Menu";
         MenuScroll[0].style.display = "Flex";
         Pagina[0].style.display = "Block";
         Informacion[0].style.display = "none";
