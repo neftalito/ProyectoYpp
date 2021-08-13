@@ -36,24 +36,15 @@ h1{
   color:Black;
 }
 
-/* h1,h2{
-  text-shadow: 5px 4px 4px var(--fondo-titulo);
-  text-shadow: 5px 4px 4px rgb(80, 79, 79);
-} */
+
 /* Background */
-/*.Pagina-Bg,*/ body{
+body{
   background-image: url('/img/bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
   background-attachment: fixed;
 }  
 
-/* html {
-  background-image: url('/img/bg.webp');
-  background-repeat: repeat;
-  background-size: cover;
-} */
 /* Menu Scroll */
 
 #MenuContenido {
@@ -87,9 +78,6 @@ h1{
   overflow-y: auto;
   overflow-x: hidden;
   margin-right: 5rem;
-
-  /* position: fixed;
-  top: 50; */
 
 }
 
@@ -242,7 +230,6 @@ i,
   color: black;
   padding: 1rem 1rem;
   text-decoration: none;
-  /* text-shadow: 0px 0px 1px black; */
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -250,9 +237,6 @@ i,
   color: black;
 }
 
-/* #MenuBtn a:hover{
-  background-color: var(--fondo-boton-navegacion);
-} */
 #MenuBtn a:hover > span{
   color: white;
 }
