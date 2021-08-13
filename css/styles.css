@@ -45,6 +45,8 @@ h1{
   background-image: url('/img/bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
 }  
 
 /* html {
